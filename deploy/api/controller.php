@@ -126,7 +126,7 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 		    $response = $response->withStatus(403);
 		}
 	    } else {
-		$response = $response->withStatus(500);
+		$response = $response->withStatus(400);
 	    }
 
 	    return $response;
